@@ -44,7 +44,7 @@ class App extends Component {
         resultContext.drawImage(secondElem, 0, 0);
 
         const imgData = resultCanvas.toDataURL('image/jpeg');
-        const pdf = new jsPDF('p', 'px', [816, 1056]);
+        const pdf = new jsPDF('p', 'px', [700, 1056]);
 
         pdf.addImage(imgData, 'JPEG', 0, 0);
         pdf.addPage();
